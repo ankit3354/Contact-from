@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="form-container">
+            <div class="header">
+                <h2>Resitration Form</h2>
+            </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label for="username">UserName</label>
+                    <input type="text" name="" id="username" placeholder="enter your name" autocomplete="off">
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <i class="ri-error-warning-fill"></i>
+                    <small>error enter valid name</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="enter your email" autocomplete="off">
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <i class="ri-error-warning-fill"></i>
+                    <small>error enter valid name</small>
+                </div>
+                <div class="form-control">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="" id="phone" placeholder="enter your phone number" autocomplete="off">
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <i class="ri-error-warning-fill"></i>
+                    <small>error enter valid name</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" name="" id="password" placeholder="enter password" autocomplete="off">
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <i class="ri-error-warning-fill"></i>
+                    <small>error enter valid password</small>
+                </div>
+                <div class="form-control">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" name="" id="cpassword" placeholder="enter confirm password" autocomplete="off">
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <i class="ri-error-warning-fill"></i>
+                    <small>error enter valid password</small>
+                </div>
+                <input type="submit" value="Submit"  name="" class="submit-btn" >
+            </form>  
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

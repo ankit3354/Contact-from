@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --myfont :'Mulish',sans-serif;
+    --my-btn-font:'Montserrat',sans-serif;
+    --lg-lightcolor: linear-gradient(to left,rgb(187, 255, 29),rgb(255, 44, 44));
+    --lg-color: linear-gradient(to left,rgb(255, 131, 48),rgb(245, 255, 104));
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    font-family: var(--myfont);
+    background: #f7f7f7;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    width: calc(100vw - 65vw);
+    max-width: 100%;    
+    box-shadow: 5px 5px 14px rgba(0,0,0,0.5);
+}
+.form{
+    padding: 40px;
+}
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin: 5px;
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 18px;
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    font-family:var(--myfont);
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #484848;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border: red;
+}
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    visibility: hidden;
+}
+.form-control.success i.ri-checkbox-circle-fill{
+    color: green;
+    visibility: visible;
+}
+.form-control.error i.ri-error-warning-fill{
+    color: red;
+    visibility: visible;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    left: 20px;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.header{
+    background: var(--lg-color);
+    padding: 30px 0;
+}
+.header h2{
+    color: #222;
+    font-family: var(--my-btn-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form .submit-btn{
+    background: var(--lg-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.form .submit-btn:hover{
+    background: linear-gradient(to right, rgb(195, 234, 255), #91cfff );
+}
+
+
+@media (max-width:980px) {
+    .form-container{
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+}   
